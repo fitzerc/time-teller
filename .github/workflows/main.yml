@@ -40,6 +40,6 @@ jobs:
       - name: Build
         run: |
           npm run build -- --prod
-     # - name: Test
-     #   run: |
-     #     npm run test -- --configuration production
+      - name: Test
+        run: |
+          npm run test
