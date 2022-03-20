@@ -3,11 +3,11 @@
         {{ randomTime }}
     </div>
     <div *ngIf="!shouldShowTime" style="color: darkslategrey;" class="d-flex justify-content-center">
-        Click button to see the time
+        Click to see the time
     </div>
     <div class="d-flex justify-content-center mt-4 mb-4">
         <button *ngIf="!shouldShowTime" class="btn btn-secondary" (click)="showTime()">Show Time</button>
-        <button *ngIf="shouldShowTime" class="btn btn-secondary" (click)="reset()">Get New Time</button>
+        <button *ngIf="shouldShowTime" class="btn btn-secondary" (click)="reset()">Try Another</button>
     </div>
 
     <div class="clock">
